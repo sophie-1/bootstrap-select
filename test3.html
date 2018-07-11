@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.css">
+    <link rel="stylesheet" href="dist/css/bootstrap-select.css">
+    <style>
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            z-index: 1000;
+            display: none;
+            float: left;
+            min-width: 160px;
+            padding: 5px 0;
+            margin: 2px 0 0;
+            font-size: 14px;
+            text-align: left;
+            list-style: none;
+            background-color: #fff;
+            -webkit-background-clip: padding-box;
+            background-clip: padding-box;
+            border: 1px solid #ccc;
+            border: 1px solid rgba(0, 0, 0, .15);
+            border-radius: 4px;
+            -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+        }
+
+        .dropdown-menu.show ul {
+            display: block;
+        }
+
+        .dropdown-menu>li>a {
+            display: block;
+            padding: 3px 20px;
+            clear: both;
+            font-weight: normal;
+            line-height: 1.42857143;
+            color: #333;
+            white-space: nowrap;
+        }
+
+        .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a span.check-mark {
+            position: absolute;
+            display: inline-block;
+            right: 15px;
+            margin-top: 5px;
+        }
+
+        .glyphicon {
+            position: relative;
+            top: 1px;
+            display: inline-block;
+            font-family: 'Glyphicons Halflings';
+            font-style: normal;
+            font-weight: normal;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .glyphicon-ok:before {
+            content: "选中";
+        }
+    </style>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.js" defer></script>
+    <script src="dist/js/bootstrap-select.js" defer></script>
+</head>
+
+<body>
+    <select id="done" class="selectpicker" multiple="" data-done-button="true" tabindex="-98">
+        <option>Apple</option>
+        <option>Banana</option>
+        <option>Orange</option>
+        <option>Pineapple</option>
+        <option>Apple2</option>
+        <option>Banana2</option>
+        <option>Orange2</option>
+        <option>Pineapple2</option>
+        <option>Apple2</option>
+        <option>Banana2</option>
+        <option>Orange2</option>
+        <option>Pineapple2</option>
+    </select>
+</body>
+
+</html>
